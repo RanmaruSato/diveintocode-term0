@@ -4,8 +4,7 @@ course_dict = {
     'Railsチュートリアルコース': {'Gさん', 'Fさん', 'Eさん'},
     'JS': {'Aさん', 'Gさん', 'Hさん'},
 }
-print({"D"} <= {"A", "B", "C"})
-# print({'Cさん', 'Aさん'}&course_dict['AIコース'])
+
 def find_person(want_to_find_person):
     """
     受講生がどのコースに在籍しているかを出力する。
@@ -51,7 +50,7 @@ def find_person(want_to_find_person):
     #上の例の反例
     #完全不一致
     elif(want_to_find_person <= course_dict['Railsチュートリアルコース'])==False and (course_dict['Railsチュートリアルコース'] - want_to_find_person == course_dict['Railsチュートリアルコース']) == True:
-        #この条件の中でwant_to_find_personがcourse_dict['Railsコース']の中に
+        #この条件の中でwant_to_find_personがcourse_dict['Railsチュートリアルコース']の中に
         #含まれていない場合と、含まれている場合で場合分け。
         print('Railsチュートリアルコースに' + str(want_to_find_person) + 'さんは在籍していません')
     elif(want_to_find_person <= course_dict['Railsチュートリアルコース'])==False and (course_dict['Railsチュートリアルコース'] - want_to_find_person == course_dict['Railsチュートリアルコース']) == False:
@@ -63,7 +62,7 @@ def find_person(want_to_find_person):
     #上の例の反例
     #完全不一致
     elif(want_to_find_person <= course_dict['JS'])==False and (course_dict['JS'] - want_to_find_person == course_dict['JS']) == True:
-        #この条件の中でwant_to_find_personがcourse_dict['Railsコース']の中に
+        #この条件の中でwant_to_find_personがcourse_dict['JS']の中に
         #含まれていない場合と、含まれている場合で場合分け。
         print('JSに' + str(want_to_find_person) + 'さんは在籍していません')
     elif(want_to_find_person <= course_dict['JS'])==False and (course_dict['JS'] - want_to_find_person == course_dict['JS']) == False:
