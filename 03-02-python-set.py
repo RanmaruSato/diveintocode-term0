@@ -6,19 +6,16 @@ course_dict = {
 }
 
 def find_person(want_to_find_person):
-    """
-    受講生がどのコースに在籍しているかを出力する。
-    まずはフローチャートを書いて、どのようにアルゴリズムを解いていくか考えてみましょう。
-    """
-
-    # ここにコードを書いてみる
+   
     #AIコースの判定
+    
     #まず、want_to_find_personが各種コースに全て含まれているか判定
     #Falseであれば、完全不一致か部分的一致か場合分けしてMECEを満たす
 
     #want_to_find_person がcourse_dict['AIコース']に全て含まれている場合
     if(want_to_find_person <= course_dict['AIコース'])==True:
         print('AIコースに'+str(want_to_find_person)+'さんは在籍しています')
+        
     #上の例の反例
     #完全不一致
     elif(want_to_find_person <= course_dict['AIコース'])==False and (course_dict['AIコース'] - want_to_find_person == course_dict['AIコース']) == True:
@@ -27,10 +24,8 @@ def find_person(want_to_find_person):
         print('AIコースに' + str(want_to_find_person) + 'さんは在籍していません')
     elif(want_to_find_person <= course_dict['AIコース'])==False and (course_dict['AIコース'] - want_to_find_person == course_dict['AIコース']) == False:
         print(str(course_dict['AIコース'] & want_to_find_person) +'さんは在籍しています')
-
-
-
-        #Railsコースの判定
+    #Railsコースの判定
+    
     #want_to_find_person がcourse_dict['Railsコース']に全て含まれている場合
     if(want_to_find_person <= course_dict['Railsコース'])==True:
         print('Railsコースに'+str(want_to_find_person)+'さんは在籍しています')
@@ -67,8 +62,6 @@ def find_person(want_to_find_person):
         print('JSに' + str(want_to_find_person) + 'さんは在籍していません')
     elif(want_to_find_person <= course_dict['JS'])==False and (course_dict['JS'] - want_to_find_person == course_dict['JS']) == False:
         print(str(course_dict['JS'] & want_to_find_person) +'さんは在籍しています')
-
-
 
 def main():
     want_to_find_person = {'Cさん', 'Aさん'}
