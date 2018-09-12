@@ -4,9 +4,10 @@ with open('address.csv') as f:
     #csvファイルの１行目が不要なので、１行目とそれ以外を分けて定義
     reader = csv.reader(f)
     header = next(reader)
+    #配列を初期化
     li = []
     for row in reader:
-        #ソートするためにソート対象の要素をstrかたintに偏見
+        #ソートするためにソート対象の要素をstr型intに変換
         row[1] = int(row[1])
         #sorted関数を使用するために、rowを配列に加えていく
         li.append(row)
