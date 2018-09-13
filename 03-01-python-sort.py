@@ -1,7 +1,7 @@
 import csv
 # csvファイルを開いて　以後変数fとして定義
 with open('address.csv') as f:
-    #csvファイルの１行目が不要なので、１行目とそれ以外を分けて定義
+    #郵便番号順でソートするために１行目とそれ以外を分けて定義
     reader = csv.reader(f)
     header = next(reader)
     #配列を初期化
