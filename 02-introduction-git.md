@@ -36,9 +36,7 @@ Reinitialized existing Git repository in C:/Users/ｰｰｰｰｰｰｰｰ
 リポジトリに関するメタデータを参照したいときにみる。
 Gitの管理下から外したいときに削除する。
 
-
-.gitコマンド
-# git addコマンドについて説明してください。
+# git addとは
 また必ず以下の観点を含めるようにしてください。
 
 git addコマンドは、何を行うコマンドですか？
@@ -47,14 +45,13 @@ git addコマンドは、何を行うコマンドですか？
 ファイルをコミットする前に変更内容を一時的に登録しておくバッファのようなもの
 hoge.htmlをステージング領域に追加するコマンドを記述してください。
 
-```git add hoge.html```  
+```$git add hoge.html```  
 hoge.htmlをステージング領域に追加されていたとします。hoge.htmlをステージング領域から削除する方法を記述してください  
 
-```git reset hoge.html```
+```$git reset hoge.html```
 
 
 # git commitコマンドとは
-また必ず以下の観点を含めるようにしてください。
 
 git commitコマンドは、何を行うコマンドですか？
 ステージングエリアに登録されているファイルを１つの束として、リポジトリの履歴に登録する。
@@ -85,4 +82,4 @@ Date:   Fri Feb 23 19:38:22 2018 +0900
 ```  
 
 commit message 1までコミットを戻す方法。    
-```git reset 7b6f15fdde0f56dae4541a1a896ef6dca630e28f```
+```$git reset 7b6f15fdde0f56dae4541a1a896ef6dca630e28f```
