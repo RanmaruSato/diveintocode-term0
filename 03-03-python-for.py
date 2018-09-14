@@ -2,7 +2,7 @@ WEEK_LIST = ['月', '火', '水', '木', '金', '土', '日']
 SUBJECT_LIST = ['Python', '数学', '機械学習', '深層学習','エンジニアプロジェクト']
 #次の日の授業は前日の最後の次の授業から始まることに注意してください。
 
-def output_schedule(study_time_list, holiday,WEEK_LIST,SUBJECT_LIST):
+def output_schedule(study_time_list,WEEK_LIST,SUBJECT_LIST):
     '''今週の勉強予定を出力します'''
     #科目のインデックス
     subject_index = 1
@@ -36,8 +36,7 @@ def main():
     # 1日に何時間勉強するか（1週間　月曜日〜日曜日）
 
     study_time_list = [3, 1, 3, 0, 4, 2, 2]
-    holiday = '木曜日は、お休みです。'
-    output_schedule(study_time_list,holiday,WEEK_LIST,SUBJECT_LIST)
+    output_schedule(study_time_list,WEEK_LIST,SUBJECT_LIST)
 
 
 if __name__ == '__main__':
