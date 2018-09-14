@@ -59,9 +59,30 @@ hoge.htmlをステージング領域に追加されていたとします。hoge.
 git commitコマンドは、何を行うコマンドですか？
 ステージングエリアに登録されているファイルを１つの束として、リポジトリの履歴に登録する。
 この記録を元にファイルを過去の状態に戻したり、削除されたファイルを復元したりできる。
-コミットのログを確認する方法を記述してください。   
+コミットのログを確認する方法は   
 ```$git log```
-コミットを取り消す方法を記述してください。  
+コミットを取り消す方法は  
 ```$git reset```
-以下のコミット履歴があった場合、commit message 1までコミットを戻す方法を記述してください。  
+以下のコミット履歴があった場合  
+```
+commit c4a9f6aad4ea6f5b372b9bc742c1dfc06b8641f1 (HEAD -> master, origin/master, origin/HEAD)
+Author: Akihiro Nakao <nakao@diveintocode.jp>
+Date:   Wed Mar 21 16:42:30 2018 +0900
+
+    commit message 3
+
+commit cff10b7231c5238cbd7ddab0bc19c3b7f02ba35d
+Author: Akihiro Nakao <nakao@diveintocode.jp>
+Date:   Wed Mar 21 16:40:31 2018 +0900
+
+    commit message 2
+
+commit 7b6f15fdde0f56dae4541a1a896ef6dca630e28f
+Author: Akihiro Nakao <genn777f3@gmail.com>
+Date:   Fri Feb 23 19:38:22 2018 +0900
+
+    commit message 1
+```  
+
+commit message 1までコミットを戻す方法。    
 ```git reset 7b6f15fdde0f56dae4541a1a896ef6dca630e28f```
