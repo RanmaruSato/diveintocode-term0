@@ -9,9 +9,9 @@ def output_schedule(study_time_list, holiday,WEEK_LIST,SUBJECT_LIST):
 #２つの配列の要素を２つの変数にアンパック
     for num,week_list_index in zip(study_time_list,range(0,len(WEEK_LIST),1)):
 
-        #木曜日のみを捕まえて、例外の文を出力
-        if WEEK_LIST[week_list_index] == '木':
-            print('木曜日は、お休みです')
+        #勉強時間が0のみを捕まえる
+        if num == 0:
+            print('{}曜日は、お休みです'.format(WEEK_LIST[week_list_index]))
         #木曜日以外のスケジュールを表示
         #intは文字列と繋げられないのでstrで変換
         else:
