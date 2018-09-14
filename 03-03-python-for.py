@@ -19,7 +19,7 @@ def output_schedule(study_time_list, holiday,WEEK_LIST,SUBJECT_LIST):
 
             #numは曜日ごとに回す回数
             for index in range(num):
-                #教科のインデックスが４を超えたら０に戻す
+                #科目のインデックスが４を超えたら０に戻す
                 if subject_index > 4:
                     subject_index = 0
                 print('{0}時限目 {1}'.format(index+1,SUBJECT_LIST[subject_index]))
