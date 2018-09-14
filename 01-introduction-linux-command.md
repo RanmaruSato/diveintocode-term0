@@ -61,6 +61,6 @@ $groups
 ```$chmod```    
 を使用する。
 従って,個人のパーミッションをrのみにすれば良いので  
-```$chmod u-w　hoge.txt```    　
+```$chmod u-w　hoge.txt```      　
 とすることで個人ユーザーから書き込み権限を剥奪する。
 またuser userの部分は、この場合ユーザIDがuserで グループIDがuseを意味する。
